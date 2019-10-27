@@ -123,7 +123,7 @@ body {
   justify-content: flex-end;
 
   &__caption {
-    color: @text-color-caption;
+    color: @text-caption-color;
     font-family: @second-font;
     font-size: 170px;
     font-weight: bold;
@@ -135,7 +135,7 @@ body {
   &__btn {
     width: 450px;
     height: 93px;
-    background-color: @pink;
+    background-color: @details-color;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 70px;
@@ -175,7 +175,7 @@ body {
 
 
   &__title {
-    color: @text-color-caption;
+    color: @text-caption-color;
     font-family: @second-font;
     font-size: 48px;
     font-weight: bold;
@@ -186,24 +186,159 @@ body {
 
   &__inner {
     width: 510px;
-    color: @main-font-text-course;
-    margin: 24px 0;
-    font-family: @text-font;
+    color: @main-font-color;
+    margin-top: 24px;
+    font-family: @main-font;
     font-size: 20px;
     font-weight: 400;
   }
 
   &__more {
+    display: inline-block;
+    margin-top: 31px;
     font-size: 30px;
     text-transform: uppercase;
-    color: @pink;
+    color: @details-color;
     font-family: @second-font;
     line-height: 20px;
     letter-spacing: 7px;
   }
 }
 
+.info {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 40px;
+  margin-top: 70px;
 
 
+  &__services {
+    list-style-type: decimal-leading-zero;
+    counter-reset: item;
+    border-right: 1px solid #e6e6e6;
+    padding-right: 62px;
+  }
 
+  &__services-item {
+    position: relative;
+    display: block;
+    font-family: @second-font;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: @main-font-color;
+    padding-bottom: 14px;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "0" counter(item) "  ";
+      counter-increment: item;
+      font-size: 36px;
+      color: transparent;
+      vertical-align: middle;
+    }
+
+    &_active {
+      color: @text-caption-color;
+      font-size: 48px;
+      font-weight: bold;
+      padding-bottom: 21px;
+
+      &::before {
+        color: @details-color;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 33px;
+        width: 1px;
+        height: 50px;
+        background: @details-color;
+      }
+    }
+  }
+}
+
+.contacts {
+  font-family: @second-font;
+  border-right: 1px solid #e6e6e6;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding-right: 10%;
+  font-weight: bold;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 300;
+    color: @text-caption-color;
+  }
+
+  &__link {
+    display: block;
+    text-align: left;
+    font-size: 32px;
+    text-decoration: none;
+    color: @details-color;
+    font-weight: bold;
+  }
+}
+
+.subscribe {
+  font-family: @second-font;
+
+  &__item {
+    font-size: 36px;
+    font-weight: 300;
+    color: @text-caption-color;
+    letter-spacing: 11px;
+    margin-bottom: 18px;
+
+    &-get {
+      font-family: @second-font;
+      font-size: 32px;
+      color: @main-font-color;
+      letter-spacing: 10px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    margin-bottom: 14px;
+  }
+
+  &__form-input {
+    display: flex;
+    width: calc(100% - 41px);
+    height: 36px;
+    text-transform: uppercase;
+    color: #e6e6e6;
+    letter-spacing: 7px;
+    line-height: 106.88px;
+    border: 1px solid #e6e6e6;
+  }
+
+  &__form-btn {
+    font-family: @second-font;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: @text-caption-color;
+    letter-spacing: 6px;
+  }
+
+  &__offer {
+    font-family: @main-font;
+    color: @main-font-color;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
