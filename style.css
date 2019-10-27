@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'Attentica 4F';
+  src: url('/fonts/attentica4f.ttf');
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.header {
+  box-shadow: 0 77px 90px rgba(119, 142, 162, 0.2);
+}
+.header-container {
+  width: 1642px;
+  margin: 0 auto;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 52px;
+  font-size: 20px;
+  height: 73px;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+}
+.header__search-icon {
+  margin-right: 21px;
+}
+.header__search-input {
+  border: none;
+  height: 35px;
+  color: #474545;
+}
+.header__search-input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #474545;
+}
+.header__search-input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #474545;
+}
+.header__search-input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #474545;
+}
+.header__search-input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #474545;
+}
+.header__search-input:hover {
+  transition: 0.2s ease;
+  cursor: text;
+}
+.header__profile {
+  color: #474545;
+  display: flex;
+  align-items: center;
+}
+.header__profile-icon {
+  margin-left: 19px;
+}
+.header__profile:hover {
+  color: #c1321a;
+  font-weight: bold;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.main-menu {
+  height: 152px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-menu__item {
+  color: #474545;
+  font-size: 20px;
+}
+.main-menu__item:hover {
+  color: #c1321a;
+  font-weight: bold;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.course {
+  display: flex;
+  margin-top: 143px;
+}
+.course-apply {
+  flex-direction: column;
+}
+.course-apply__image {
+  width: 325px;
+  height: 582px;
+}
+.course-apply__caption {
+  width: 388px;
+  color: #4829c9;
+  font-family: 'Big Shoulders Text', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 100px;
+  text-transform: uppercase;
+  text-align: right;
+}
+.course-apply__btn {
+  width: 450px;
+  height: 93px;
+  background-color: #f80953;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'Big Shoulders Text', sans-serif;
+}
+.course-tags__item {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #00104f;
+  font-size: 24px;
+  font-family: 'Big Shoulders Text', sans-serif;
+  padding-right: 20px;
+}
+.course-tags__item:last-child {
+  padding-right: 0;
+}
+.course-tags__item:hover {
+  color: #ee042c;
+  cursor: pointer;
+  font-weight: bold;
+}
+.course-description__title {
+  color: #4829c9;
+  font-family: 'Attentica 4F', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.course-description__inner {
+  width: 510px;
+  color: #323738;
+  margin-top: 20px;
+}
+.course-description__more {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 31px;
+  color: #f80953;
+  font-family: 'Big Shoulders Text', sans-serif;
+}

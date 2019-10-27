@@ -1,11 +1,32 @@
 @import "variables";
 
+@font-face {
+  font-family: 'Attentica 4F';
+  src: url('/fonts/attentica4f.ttf');
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('/fonts/georgia.ttf');
+}
+
+@font-face {
+  font-family: 'SFUI Text';
+  src: url('/fonts/sf-ui-text.ttf');
+}
+
+@font-face {
+  font-family: 'PF Din Text Comp Pro';
+  src: url('/fonts/PF Din Text.ttf');
+}
+
 body {
-  font-family: @header-font;
+
 }
 
 
 .header {
+  font-family: @header-font;
   box-shadow: 0 77px 90px rgba(119, 142, 162, 0.2);
 
   &-container {
@@ -32,6 +53,7 @@ body {
 
     &-input {
       border: none;
+      height: 35px;
       color: @header-font-color;
       &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color: @header-font-color;
@@ -46,6 +68,11 @@ body {
         color: @header-font-color;
       }
     }
+
+    &-input:hover {
+      transition: .2s ease;
+      cursor: text;
+    }
   }
 
   &__profile {
@@ -57,6 +84,12 @@ body {
       margin-left: 19px;
     }
   }
+
+  &__profile:hover {
+    color: #c1321a;
+    transition: .2s ease;
+    cursor: pointer;
+  }
 }
 
 .main-menu {
@@ -66,7 +99,111 @@ body {
   align-items: center;
 
   &__item {
-    color: @header-font-color;
-    font-size: @header-font-size;
+     color: @header-font-color;
+     font-size: @header-font-size;
+   }
+
+  &__item:hover {
+    color: #c1321a;
+    transition: .3s ease;
+    cursor: pointer;
   }
 }
+
+.course {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 143px;
+}
+
+.course-apply {
+  background: url("/img/01.svg") no-repeat top right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__caption {
+    color: @text-color-caption;
+    font-family: @second-font;
+    font-size: 170px;
+    font-weight: bold;
+    line-height: 170px;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  &__btn {
+    width: 450px;
+    height: 93px;
+    background-color: @pink;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-family: @second-font;
+  }
+}
+
+.course__detail {
+
+}
+
+.course-tags {
+
+  &__item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #00104f;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    font-family: @tag-font;
+    padding-right: 14px;
+    letter-spacing: 3px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:hover {
+      color: #ee042c;
+      cursor: pointer;
+    }
+  }
+}
+
+.course-description {
+
+
+  &__title {
+    color: @text-color-caption;
+    font-family: @second-font;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 49px;
+    letter-spacing: 14px;
+  }
+
+  &__inner {
+    width: 510px;
+    color: @main-font-text-course;
+    margin: 24px 0;
+    font-family: @text-font;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__more {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: @pink;
+    font-family: @second-font;
+    line-height: 20px;
+    letter-spacing: 7px;
+  }
+}
+
+
+
+
+
