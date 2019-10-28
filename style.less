@@ -391,6 +391,8 @@ body {
 
   &_indent {
     margin-top: 60px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid @opacity-color;
   }
 
   &-application {
@@ -404,7 +406,7 @@ body {
   &__structure {
     display: block;
     border-left: 1px solid @opacity-color;
-    padding-left: 41px;
+    padding-left: 220px;
   }
 
   &__structure-inner {
@@ -440,7 +442,31 @@ body {
   }
 }
 
-.course__detail_border {
-  border-left: 1px solid @opacity-color;
-  padding-left: 70px;
+.course {
+
+  &__detail_border {
+    border-left: 1px solid @opacity-color;
+    padding-left: 70px;
+  }
+
+  &_second {
+    margin-bottom: 105px;
+  }
+
+  &-apply_second {
+    background: url(/img/02.svg) no-repeat top left;
+  }
+
+  &-apply__caption_second {
+    font-size: 140px;
+    text-align: left;
+    line-height: 140px;
+    margin-bottom: 50px;
+  }
+
+  &-description_second {
+    padding-bottom: 150px;
+    border-left: 1px solid @opacity-color;
+    padding-left: 70px;
+  }
 }
