@@ -203,6 +203,10 @@ body {
     line-height: 20px;
     letter-spacing: 7px;
   }
+
+  &_border {
+    border-left: 1px solid @opacity-color;
+  }
 }
 
 .info {
@@ -351,7 +355,6 @@ body {
   font-weight: bold;
   letter-spacing: 4px;
   color: @text-caption-color;
-  line-height: 100px;
   margin: 1%;
   position: relative;
 
@@ -377,14 +380,17 @@ body {
     color: @main-font-color;
     line-height: 100px;
     margin: .5%;
+
+    &:hover {
+      color: @details-color;
+    }
   }
 }
 
 .course {
 
-  &-apply_border {
-    border-right: 1px solid @opacity-color;
-    margin-right: 49px;
+  &_indent {
+    margin-top: 60px;
   }
 
   &-application {
@@ -397,6 +403,8 @@ body {
 
   &__structure {
     display: block;
+    border-left: 1px solid @opacity-color;
+    padding-left: 41px;
   }
 
   &__structure-inner {
@@ -430,4 +438,9 @@ body {
     letter-spacing: 11px;
     line-height: 106px;
   }
+}
+
+.course__detail_border {
+  border-left: 1px solid @opacity-color;
+  padding-left: 70px;
 }
